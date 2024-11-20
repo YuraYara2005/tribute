@@ -1,0 +1,46 @@
+@import url('/components/timeline.css');
+@import url('/components/Favorites.css');
+@import url('/components/orbitary.css');
+@import url('/components/Hero.css');
+@import url('/components/Navbar.css');
+@import url('/components/Footer.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for theme customization */
+:root {
+    --primary: #03070a;
+    --background-color:#1a1a1a;
+    --primary-text: #ffffff;
+    --secondary: #ffffff;
+    --secondary-text: #004d99;
+    --header-bg: #f0f0f0;
+    --highlight: #ff6b64;
+}
+
+header{
+    display: block;
+}
+
+.quoted{
+    height: 30vh;
+    color: rgba(133, 133, 133, 0.63);
+    font-size: 2rem;
+}
+.quoted i{
+    color: var(--highlight);
+}
+.underline{
+    background-color: var(--highlight);
+    height: 4px;
+    width: 40px;
+    border-radius: 3px;
+}
+
+h1{
+    color: #fff;
+}

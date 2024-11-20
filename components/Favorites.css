@@ -1,0 +1,32 @@
+.Favorites-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--background-color) !important;
+    border: 0 !important;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card h4{
+    color: var(--highlight);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.card p{
+    color: var(--primary-text);
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 750px) {
+    .Favorites-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,102 @@
+/* Reset and Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fff;
+    --clr-backgroundColor: #1a1a1a;
+    --highlight: rgb(252, 187, 104);
+    --grey: #b1a2a2;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.Timeline {
+    background-color: var(--clr-backgroundColor);
+    color: var(--primary);
+}
+
+.underline {
+    background-color: var(--highlight);
+    height: 4px;
+    width: 40px;
+    border-radius: 3px;
+}
+
+.grid-time {
+    display: grid;
+    grid-template-columns: 10% 10% 60%;
+    grid-gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Date Styling */
+.date_Year {
+    color: var(--highlight);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.date {
+    color: var(--grey);
+    text-align: center;
+}
+
+/* Line Styling */
+.line {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line span {
+    display: block;
+    width: 4px; /* Thickness of the line */
+    height: 100%; /* Ensures it spans the parent container */
+    background-color: var(--highlight);
+    margin-top: 5px; /* Adds space from the number icon */
+}
+
+.line .number {
+    border: 2px solid var(--highlight);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--highlight);
+    margin-bottom: 5px;
+}
+
+/* Paragraph Styling */
+.paragraph {
+    background-color: var(--primary);
+    color: var(--grey);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .grid-time {
+        grid-template-columns: 15% 5% 75%;
+    }
+
+    .date_Year {
+        font-size: 1rem;
+    }
+
+    .paragraph {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
